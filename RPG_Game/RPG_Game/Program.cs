@@ -18,12 +18,13 @@ namespace RPG_Game
 
         public void Unequip(Player player)
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"{Name} знято. ");
         }
 
         public override void Use(Player player)
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"{player.Name} екіпірує {Name}!");
+            Equip(player);
         }
     }
 
